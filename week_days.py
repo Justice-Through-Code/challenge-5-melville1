@@ -5,12 +5,12 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 def day_of_week():
     # Let's start simple, and build up from there.
     # 1.1 TODO: Write a for loop that prints out each day in the `days` variable above.
-        for single_day in days:
-            print(single_day)
+    for single_day in days:
+        print(single_day)
         
     # 1.2 TODO: Write another for loop that does the same thing, but this time use the range function
-        for i in range(len(days)):
-            print(days[i])
+    for i in range(len(days)):
+        print(days[i])
 
 
 
@@ -44,14 +44,14 @@ def favorite_activities():
      # Each time through this new loop, use the index number to index into each of your lists for the data
      # you need to print out.
     for i in range(len(days)):
-        print(f'on {days[i]}s, your favorite activity is to {looplst[i]}.')
+        print(f'On {days[i]}s, your favorite activity is to {looplst[i]}.')
 
 #favorite_activities()
 
 
-# # '''
-# #     Take a look back at the code you just wrote. Look at how much it does!
-# #     Often, programmers will be given large tasks, and it's our responsibility to be able to break it down into
+ # '''
+ #     Take a look back at the code you just wrote. Look at how much it does!
+ #     Often, programmers will be given large tasks, and it's our responsibility to be able to break it down into
 # #     smaller pieces. We did the above piece by piece, but think about what the prompt might have been
 # #     to get us there.
 
@@ -67,7 +67,7 @@ def favorite_activities():
 
 def temp_by_day():
     for day in days:
-        temp = int(input(f'What is the temperature on {day} ?'))
+        temp = int(input(f'What is the temperature on {day}?'))
         if temp < 50:
             print('Brr, put on a jacket!')
         elif temp < 65: 
@@ -83,11 +83,11 @@ def temp_by_day():
 
 
 def temp_by_day_continuous():
-    temp_out = int(input(f'What is the temperature outside? '))
+    temp_out = int(input(f'What is the temperature outside?'))
     while temp_out <= 65:
         print('Wear a sweater')
-        temp_out = int(input(f'What is the temperature outside? '))
-    print('Spring has sprung')
+        temp_out = int(input(f'What is the temperature outside?'))
+    print('Spring has sprung!')
 #temp_by_day_continuous()
 
 #     # 4 TODO: Write a program that asks the user what temperature it is outside. While the temperature is below 65,
